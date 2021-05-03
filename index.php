@@ -1,3 +1,6 @@
+<?php
+	require_once('includes/functions.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,5 +10,8 @@
 </head>
 <body>
 	<h1>Hello</h1>
+	<?php
+	
+	?>
 </body>
 </html>

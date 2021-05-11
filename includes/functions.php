@@ -61,3 +61,10 @@ function update($artist = NULL, $title = NULL, $url = NULL, $id){
 
 	return $stmt->rowCount(); // number of affected rows or 0
 }
+
+function delete($id){
+	global $conn;
+	$stmt = $conn->prepare("DELETE FROM media WHERE id = :id");
+	$stmt->bindParam(':id', $id);
+	$stmt->execute();
+}

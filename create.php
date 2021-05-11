@@ -20,6 +20,7 @@ if(isset($_POST['insert'])){
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Insert Record</title>
+	<?php include('theme/header-scripts.php'); ?>
 </head>
 <body>
 	<h1>Insert Record</h1>
@@ -33,5 +34,6 @@ if(isset($_POST['insert'])){
 
 		<button class="btnInsert" name="insert">Insert Record</button>
 	</form>
+	<?php include('theme/footer-scripts.php'); ?>
 </body>
 </html>

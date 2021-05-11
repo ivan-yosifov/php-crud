@@ -28,6 +28,7 @@ if(isset($_POST['update'])){
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Upate Record</title>
+	<?php include('theme/header-scripts.php'); ?>
 </head>
 <body>
 	<?php if($record): ?>
@@ -46,5 +47,6 @@ if(isset($_POST['update'])){
 	<?php else: ?>
 		<h1>User is not set. Try again</h1>
 	<?php endif; ?>
+	<?php include('theme/footer-scripts.php'); ?>
 </body>
 </html>
